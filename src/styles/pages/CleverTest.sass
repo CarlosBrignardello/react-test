@@ -1,0 +1,53 @@
+.main
+  padding: 0 6rem
+  &__components-container
+    display: flex
+    justify-content: space-between
+  &__grid-container
+    padding-top: 4rem
+    display: grid
+    grid-gap: 2rem
+    grid-template-columns: repeat(2, 1fr)
+    .item
+      h3
+        margin: 0
+      &__title
+        background-color: #fff
+        padding: 1rem
+        border: 2px solid #b8b8b8
+        border-radius: .4rem .4rem 0 0
+      &__content
+        background-color: #fff
+        padding: 1rem
+        border: 2px solid #b8b8b8
+        border-top: none
+        border-radius: 0 0 .4rem .4rem
+        button
+          border: none
+          background-color: transparent
+          display: block
+          padding: .5rem 0
+          width: 100%
+          
+          &:hover
+            background-color:#b6b6b6
+          &:focus
+            background-color:#474747
+            outline: none
+            color: white
+
+@media (max-width: 425px)
+  .main
+    padding: 0 1rem
+    &__components-container
+      display: inline
+      button
+        margin-top: .5rem
+
+
+@media (max-width: 320px)
+  .main
+    &__components-container
+      display: inline
+      button
+        margin-top: .5rem

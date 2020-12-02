@@ -1,0 +1,33 @@
+.App
+  text-align: center
+  padding: 0 8rem
+  &__content
+    &__list-container
+      text-align: center
+      background-color: #fff
+      box-shadow: -1px 3px 10px 0
+      ul
+        list-style: none !important
+        padding: 0
+  .grid
+    padding-top: 4rem
+    display: grid
+    grid-gap: 2rem
+    grid-template-columns: repeat(3, 1fr)
+
+
+@media (max-width: 425px)
+  .App
+    padding: 0 1rem
+
+@media (max-width: 320px)
+  .App
+    padding: 0 .5rem
+    &__content
+      &__list-container
+        h3
+          font-size: .7rem
+        ul
+          font-size: .5rem
+    .grid
+      grid-gap: .5rem
